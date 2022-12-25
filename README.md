@@ -1,1 +1,5 @@
-Bot de música de discord com diversos comandos em slashs e suporte a soundcloud, spotify e youtube.
+- Bot de música para Discord
+
+* Versão DiscordJS: 13.9
+* Suporte a Youtube, Spotify e SoundCloud
+
