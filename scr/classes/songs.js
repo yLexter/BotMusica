@@ -9,7 +9,7 @@ class Song {
             this.url = options?.url || "??",
             this.duration = options?.duration || 0,
             this.durationFormatted = options.durationFormatted || '??'
-            this.notSeekable = options.notSeekable || false
+        this.notSeekable = options.notSeekable || false
     }
 }
 
@@ -55,6 +55,18 @@ class SpotifySong extends Song {
         const id = this.getIdSpotify()
 
         return hashCode(id)
+    }
+
+    toJSON() {
+        return {
+            type: this.type,
+            id: this.id,
+            title: this.title,
+            url: this.url,
+            duration: this.duration,
+            durationFormatted: this.durationFormatted,
+            hash: this.hash,
+        }
     }
 }
 

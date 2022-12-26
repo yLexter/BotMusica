@@ -77,7 +77,7 @@ class Utils {
         return String(moment(date).tz('America/Sao_Paulo').format('LLLL'))
     }
 
-    static titleFormated(string) {
+    static formattedSongTitle(string) {
         let str = string.toLowerCase()
 
         const replaceStrings = [

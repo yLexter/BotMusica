@@ -528,6 +528,7 @@ class Queue {
                         throw new Error('Música não Encontrada.');
 
                     const { title, uri } = song
+
                     const data = new SpotifySong({
                         id: msc.id,
                         title: title,
@@ -536,7 +537,7 @@ class Queue {
                         durationFormatted: secondsToText(msc.duration / 1000),
                     })
 
-                    await DatabaseSongs.addSong(data)
+                    await DatabaseSongs.addSong(data.toJSON())
                     await DatabaseSongs.sortArray()
 
                     return data;
@@ -569,7 +570,7 @@ class Queue {
                             })
 
                             songsSpotify.push(data)
-                            songsNotInDatabase.push(data)
+                            songsNotInDatabase.push(data.toJSON())
                         }
                     }
 

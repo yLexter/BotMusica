@@ -3,7 +3,6 @@ const Command = require('../classes/command')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const Youtube = require("youtube-sr").default;
 const lyricsFinder = require('lyrics-finder');
-const { titleFormated } = require('../classes/utils')
 const { geral } = require("../enums/index")
 
 class CommandLyrics extends Command {
@@ -38,20 +37,18 @@ class CommandLyrics extends Command {
                 )
 
         }
+
+        const { Utils: { formattedSongTitle } } = this
         const { cor } = client
         const userMusic = interaction.options.getString('song')
         const lyrics = await lyricsFinder(userMusic)
         const songTitle = async (query) => {
             const song = await Youtube.searchOne(query).catch(() => null)
-            return !song ? `Lyrics` : titleFormated(song.title)
+            return !song ? `Lyrics` : formattedSongTitle(song.title)
         }
 
-        if (!lyrics) {
-            const embed = new MessageEmbed()
-                .setColor(cor)
-                .setAuthor({ name: `| Lyrics não encontradas`, iconURL: interaction.user.displayAvatarURL() })
-            return interaction.editReply({ embeds: [embed], ephemeral: true })
-        }
+        if (!lyrics)
+            throw new Error(`Lyrics não encontradas`);
 
         const title = await songTitle(lyrics)
 

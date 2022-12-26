@@ -67,7 +67,7 @@ class CommandPromisse extends Command {
             const song = await Queue.songSearch(query)
 
             if (song.type !== songType.track)
-                return interaction.editReply({ content: '❌| O promisse aceita apenas tracks.' })
+                throw new Error({ content: 'O promisse aceita apenas tracks.' })
 
             queue.firstMusic(song)
             return embed(song)
