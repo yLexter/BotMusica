@@ -14,13 +14,23 @@ class Command extends Base {
     notQueue(interaction) {
         const embed = new MessageEmbed()
             .setColor('RED')
-            .setDescription(`❌ Não existe queue no servidor`)
+            .setDescription(`❌ Não existe uma queue ativa no servidor`)
 
-        if (interaction.deferred) {
-            interaction.editReply({ embeds: [embed], ephemeral: true })
-        } else {
-            interaction.reply({ embeds: [embed], ephemeral: true })
-        }
+        if (interaction.deferred)
+            return interaction.editReply({ embeds: [embed], ephemeral: true });
+
+        return interaction.reply({ embeds: [embed], ephemeral: true })
+    }
+
+    sucessMessage(interaction, message) {
+        const embed = new MessageEmbed()
+            .setDescription(`✅ ${message}`)
+            .setColor("GREEN")
+
+        if (interaction.deferred)
+            return interaction.editReply({ embeds: [embed], ephemeral: true });
+
+        return interaction.reply({ embeds: [embed], ephemeral: true })
     }
 
 }

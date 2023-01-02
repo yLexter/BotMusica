@@ -24,7 +24,7 @@ class CommandPlay extends Command {
 
     async execute(client, interaction) {
         const { cor } = client
-        const searchUser = interaction.options.getString('search');
+        const query = interaction.options.getString('search');
 
         try {
             await interaction.deferReply()
@@ -33,7 +33,7 @@ class CommandPlay extends Command {
                 throw new Error("Você precisa entrar em um canal de voz primeiro.")
 
             const queue = client.queues.get(interaction.guild.id) || new Queue(client, interaction)
-            const data = await Queue.songSearch(searchUser)
+            const data = await Queue.songSearch(query, interaction)
 
             const typesData = {
                 [songType.track]: async () => queue.play(data, interaction),

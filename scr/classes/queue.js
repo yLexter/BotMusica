@@ -346,6 +346,19 @@ class Queue {
         })
     }
 
+    async sendMessageError(error) {
+        const { client } = this
+        const song = this.songs[0]
+
+        const embed = new MessageEmbed()
+             .setColor("RED")
+            .setAuthor({ name: `| ${client.user.tag}`, iconURL: client.user.displayAvatarURL() })
+            .setTitle("Erro na Reprodução")
+            .setDescription(`**Música:** [${song.title}](${song.url}) }\n**Motivo:** ${error}`)
+
+        return this.channel.send({ embeds: [embed] }).catch(() => { })
+    }
+
     setListeners() {
         this.player.on(AudioPlayerStatus.Idle, async () => {
             const songs = this.getSongs()
@@ -361,7 +374,8 @@ class Queue {
             this.playSong(songs[0])
         });
 
-        this.player.on("error", e => {
+        this.player.on("error", async e => {
+            await this.sendMessageError(e.message)
             this.stop()
             console.log(e)
         })
@@ -394,18 +408,19 @@ class Queue {
             }
 
             if (this.message)
-                this.message.delete().catch(() => { });
+                this.message.edit({ components: [] }).catch(() => { });
 
             this.message = await this.sendMessage(song)
 
         } catch (e) {
             console.log(e)
+            await this.sendMessageError(e.message)
             this.stop()
         }
 
     }
 
-    static async songSearch(query) {
+    static async songSearch(query, interaction) {
         const isSpotifyUrl = query.isUrlSpotify()
         const isUrlSoundcloud = query.isUrlSoundcloud()
         const isYoutubePlaylist = query.isUrlYoutubePlaylist()
@@ -438,7 +453,7 @@ class Queue {
                             url: query,
                             duration: durationInMs,
                             durationFormatted: secondsToText(durationInMs / 1000),
-                            notSeekable: true
+                            notSeekable: true,
                         })
                     })
 

@@ -33,16 +33,16 @@ class CommandSearchYT extends Command {
       await interaction.deferReply()
 
       const query = interaction.options.getString('search');
-      const queueSyt = SearchYT.get(interaction.user.id)
+      const isActiveResearch = SearchYT.get(interaction.user.id)
       const filteredList = (await YouTube.search(query, { limit: 10 })).filter(m => m.duration > 0)
       const maximumTime = 30
 
-      if (queueSyt || (filteredList && !filteredList.length)) {
-        const helpMsg = new MessageEmbed()
+      if (isActiveResearch || !filteredList.length) {
+        const embed = new MessageEmbed()
           .setColor(cor)
           .setAuthor({ name: `| ❌ Erro`, iconURL: interaction.user.displayAvatarURL() })
           .setDescription('Pesquisa invalida ou Busca em andamento.')
-        return interaction.editReply({ embeds: [helpMsg] })
+        return interaction.editReply({ embeds: [embed] })
       }
 
       SearchYT.set(interaction.user.id, true)
@@ -51,12 +51,12 @@ class CommandSearchYT extends Command {
         .map((song, index) => `${index + 1}. [${song.title}](${song.url}) [${song.durationFormatted}]`)
         .join('\n')
 
-      const helpMsg = new MessageEmbed()
+      const embed = new MessageEmbed()
         .setColor(cor)
         .setDescription(descriptionSongs)
         .setAuthor({ name: `|🔎 Pesquisa do Youtube`, iconURL: interaction.user.displayAvatarURL() })
         .setFooter({ text: `Digite um número de 1 a ${filteredList.length} dentre ${maximumTime}s para por a música, caso contrário a busca será cancelada | Use !cancel para cancelar.` })
-      await interaction.editReply({ embeds: [helpMsg] })
+      await interaction.editReply({ embeds: [embed] })
 
       const collector = interaction.channel.createMessageCollector({
         filter: m => (filteredList[m.content - 1] || m.content == "!cancel") && interaction.user.id === m.author.id,
@@ -74,6 +74,7 @@ class CommandSearchYT extends Command {
 
         const queue = client.queues.get(interaction.guild.id) || new Queue(client, interaction)
         const { id, title, url, duration, durationFormatted } = filteredList[m.content - 1]
+
         const song = new Song({
           id: id,
           title: title,

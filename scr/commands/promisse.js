@@ -46,13 +46,16 @@ class CommandPromisse extends Command {
             'queue': queuePromisse,
         }
 
+        if (!queue)
+            return super.notQueue(interaction)
+
         await interaction.deferReply()
         await subCommands[subCommand]()
 
         async function promisseSearch() {
             const query = interaction.options.getString('psearch')
 
-            if (!queue || query.isUrlYoutubePlaylist() || queue.songs.length <= 1) {
+            if (query.isUrlYoutubePlaylist() || queue.songs.length <= 1) {
                 const helpMsg = new MessageEmbed()
                     .setColor(cor)
                     .addFields(
@@ -75,20 +78,10 @@ class CommandPromisse extends Command {
 
         async function queuePromisse() {
             const number = interaction.options.getInteger('songqueue')
-            const limit = queue?.songs.length - 1
             const music = queue?.songs[number]
 
-            if (!music || number <= 1) {
-                const helpMsg = new MessageEmbed()
-                    .setColor(cor)
-                    .addFields({ name: 'Numero invalido', value: '`Parâmetro não é um numero inteiro maior que 1`' })
-                    .setAuthor({ name: `| Possiveis Erros: `, iconURL: interaction.user.displayAvatarURL() })
-
-                if (number > limit)
-                    helpMsg.addFields({ name: "Número Incorreto", value: ` Você só pode colocar números maiores que **1** e menores ou igual a **${limit}**.` });
-
-                return interaction.editReply({ embeds: [helpMsg] })
-            }
+            if (!music)
+                throw new Error("A posição escolhida é inválida")
 
             queue.move(number, 1)
 

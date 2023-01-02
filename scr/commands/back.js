@@ -25,14 +25,7 @@ class CommandBack extends Command {
     if (!queue)
       return super.notQueue(interaction)
 
-    const song = await queue.playBackMusic()
-    
-    const embedSucess = new MessageEmbed()
-      .setColor(cor)
-      .setDescription(`[${song.title}](${song.url}) [${song.durationFormatted}]`)
-      .setAuthor({ name: '| ⏪ Retornada', iconURL: interaction.user.displayAvatarURL() })
-    return interaction.reply({ embeds: [embedSucess] })
-
+    await queue.playBackMusic()
   }
 }
 

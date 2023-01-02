@@ -53,9 +53,8 @@ class CustomPlaylist extends Command {
    }
 
    async execute(client, interaction) {
-
       const { cor } = client
-      const { Database, SongsPagination } = this
+      const { Database, SongsPagination, sucessMessage } = this
       const { customPlaylist } = await Database.fecthUser(interaction)
       const limiteSongs = 1000
       const subCommand = interaction.options.getSubcommand()
@@ -98,10 +97,7 @@ class CustomPlaylist extends Command {
             { $pull: { customPlaylist: songRemoved } }
          )
 
-         const embed = new MessageEmbed()
-            .setDescription(`✅ A track [${songRemoved.title}](${songRemoved.url}) foi deletada com sucesso!`)
-            .setColor(cor)
-         return interaction.editReply({ embeds: [embed] })
+         return sucessMessage(interaction, `A track [${songRemoved.title}](${songRemoved.url}) foi deletada com sucesso!`)
       }
 
       async function playCustomPlaylist() {
@@ -112,7 +108,8 @@ class CustomPlaylist extends Command {
 
          if (queue) {
             queue.play(customPlaylist)
-            return interaction.editReply("Playlist adicionada com sucesso")
+
+            return sucessMessage(interaction, `Playlist adicionada com sucesso`)
          }
 
          queue = new Queue(client, interaction)
@@ -142,10 +139,7 @@ class CustomPlaylist extends Command {
                   { customPlaylist: customPlaylist.concat(filtred) }
                )
 
-               const embed = new MessageEmbed()
-                  .setDescription(`✅ A playlist [${playlist.name}](${playlist.url}) foi adicionado com sucesso!`)
-                  .setColor(cor)
-               return interaction.editReply({ embeds: [embed] })
+               return sucessMessage(interaction, `A playlist [${playlist.name}](${playlist.url}) foi adicionado com sucesso!`)
             },
             [songType.track]: async () => {
                if (customPlaylist.length >= limiteSongs)
@@ -159,10 +153,7 @@ class CustomPlaylist extends Command {
                   { $push: { customPlaylist: data } }
                )
 
-               const embed = new MessageEmbed()
-                  .setDescription(`✅ A track [${data.title}](${data.url}) foi adicionado a custom playlist!`)
-                  .setColor(cor)
-               return interaction.editReply({ embeds: [embed] })
+               return sucessMessage(interaction, `✅ A track [${data.title}](${data.url}) foi adicionado a custom playlist!`)
             }
          }
 
@@ -176,7 +167,7 @@ class CustomPlaylist extends Command {
             { customPlaylist: [] }
          )
 
-         return interaction.editReply('Sua custom playlist foi deletada com sucesso.')
+         return sucessMessage(interaction, 'Sua custom playlist foi deletada com sucesso.')
       }
 
    }

@@ -14,19 +14,19 @@ class CommandNowPlaying extends Command {
     }
 
     async execute(client, interaction) {
-        
+
         const { cor } = client
         const queue = client.queues.get(interaction.guild.id)
         const song = queue?.songs[0]
 
-        if (!queue) 
+        if (!queue)
             return super.notQueue(interaction);
-    
+
         const embed = new MessageEmbed()
             .setColor(cor)
             .setDescription(`[${song.title}](${song.url})\n${queue.getProgressBar()}`)
             .setAuthor({ name: `| 🎶 Tocando Agora `, iconURL: interaction.user.displayAvatarURL() })
-        return interaction.reply({ embeds: [embed] })
+        return interaction.reply({ embeds: [embed], })
 
     }
 }

@@ -151,7 +151,7 @@ module.exports = class extends Base {
     }
 
     async queueStop(queue) {
-        await this.interaction.message.delete().catch(() => { })
+        await this.interaction.message.edit({ components: [] }).catch(() => { })
         queue.setMessageNull()
         queue.stop()
     }
@@ -160,7 +160,7 @@ module.exports = class extends Base {
         if (!queue.back)
             return this.client.embedError(this.interaction, "Não existe música para voltar")
 
-        await this.interaction.message.delete().catch(() => { })
+        await this.interaction.message.edit({ components: [] }).catch(() => { })
         queue.setMessageNull()
         queue.playBackMusic()
     }
@@ -190,7 +190,7 @@ module.exports = class extends Base {
     }
 
     async queueSkip(queue) {
-        await this.interaction.message.delete().catch(() => { })
+        await this.interaction.message.edit({ components: [] }).catch(() => { })
         queue.setMessageNull()
         queue.skip()
     }

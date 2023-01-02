@@ -59,18 +59,18 @@ class Utils {
     }
 
     static secondsToText(segundos) {
-        let dia = Math.floor(segundos / 86400)
-        let restoDia = Math.floor(segundos % 86400)
-        let horas = Math.floor(restoDia / 3600)
-        let restoHoras = Math.floor(restoDia % 3600)
-        let minutos = Math.floor(restoHoras / 60)
-        let seconds = restoHoras % 60
-        let capsula = [dia, horas, minutos, seconds].map(item => item < 10 ? `0${item}` : item)
+        const dia = Math.floor(segundos / 86400)
+        const restoDia = Math.floor(segundos % 86400)
+        const horas = Math.floor(restoDia / 3600)
+        const restoHoras = Math.floor(restoDia % 3600)
+        const minutos = Math.floor(restoHoras / 60)
+        const seconds = restoHoras % 60
+        const unitys = [dia, horas, minutos, seconds].map(unity => String(unity).padStart(2, "0"))
 
-        while (capsula[0] == '00' && capsula.length != 2)
-            capsula.shift();
+        while (unitys[0] == '00' && unitys.length != 2)
+            unitys.shift();
 
-        return capsula.join(':')
+        return unitys.join(':')
     }
 
     static formatDate(date) {

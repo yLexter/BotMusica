@@ -29,14 +29,8 @@ class CommandQueue extends Command {
             amountPerPage: queue.amountPerPage,
             title: "📑 Queue",
             firstSongIsHeader: true,
-            songs: () => {
-                const queue = client.queues.get(interaction.guild.id)
-                return queue?.getSongs() || []
-            },
-            hearder: () => {
-                const queue = client.queues.get(interaction.guild.id)
-                return queue?.getHeader() || ""
-            }
+            songs: () => client.queues.get(interaction.guild.id) ? queue.getSongs() : [],
+            hearder: () => client.queues.get(interaction.guild.id) ? queue.getHeader() : "??"
         })
 
         return pagination.startPagination()
