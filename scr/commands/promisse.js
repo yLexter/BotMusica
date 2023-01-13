@@ -64,7 +64,7 @@ class CommandPromisse extends Command {
                         { name: 'Músicas:', value: 'Quantidade de músicas **insuficiente** para usar o promisse | menor 3.' },
                         { name: "Playlists:", value: "O promissse não aceita playlists de **Spotify** e **Youtube**." })
                     .setAuthor({ name: `| ❌ Prováveis Erros: `, iconURL: interaction.user.displayAvatarURL() })
-                return interaction.editReply({ embeds: [helpMsg] })
+                return interaction.editReply({ embeds: [helpMsg], ephemeral: true })
             }
 
             const song = await Queue.songSearch(query)

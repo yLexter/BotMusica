@@ -81,7 +81,7 @@ module.exports = class extends Base {
             return this.message.delete().catch(() => { });
 
         if (queue.player._state.status == AudioPlayerStatus.Idle || (this.member.voice.channel != connection?.joinConfig.channelId || queue.buttonOnHold()))
-            return this.interaction.deferUpdate();
+            return;
 
         switch (customId) {
             case queueComponents.pause: this.queuePause(queue); break;

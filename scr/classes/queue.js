@@ -198,21 +198,17 @@ class Queue {
     stop() {
         const { client, guild, player } = this
         const connection = this.getConnection()
-
-        connection?.destroy()
-        this.message?.delete().catch(() => { })
-
-        this.channel.send({
-            embeds: [
-                new MessageEmbed()
-                    .setColor('RED')
-                    .setAuthor({ name: ' | ⏹️ Stopped Queue.', iconURL: client.user.displayAvatarURL() })
-            ]
-        }).catch(() => { })
+        const embed = new MessageEmbed()
+            .setColor('RED')
+            .setAuthor({ name: ' | ⏹️ Stopped Queue.', iconURL: client.user.displayAvatarURL() })
 
         client.queues.delete(guild.id)
         player.removeAllListeners(AudioPlayerStatus.Idle)
         player.removeAllListeners("error")
+
+        connection?.destroy()?.catch(() => { })
+        this.message?.edit({ components: [] }).catch(() => { })
+        this.channel?.send({ embeds: [embed] }).catch(() => { })
     }
 
     skip() {
@@ -350,8 +346,10 @@ class Queue {
         const { client } = this
         const song = this.songs[0]
 
+        if (!song) return;
+
         const embed = new MessageEmbed()
-             .setColor("RED")
+            .setColor("RED")
             .setAuthor({ name: `| ${client.user.tag}`, iconURL: client.user.displayAvatarURL() })
             .setTitle("Erro na Reprodução")
             .setDescription(`**Música:** [${song.title}](${song.url}) }\n**Motivo:** ${error}`)
@@ -370,7 +368,6 @@ class Queue {
                 return this.playRandomSong()
 
             this.backMusic()
-            this.message.delete().catch(() => { })
             this.playSong(songs[0])
         });
 
@@ -403,7 +400,8 @@ class Queue {
             if (interaction) {
                 return this.message = await interaction.editReply({
                     embeds: [this.embedSong(song)],
-                    components: this.getComponentsMessage()
+                    components: this.getComponentsMessage(),
+                    fetchReply: true
                 });
             }
 

@@ -22,6 +22,8 @@ class CommandEval extends Command {
       const { cor } = client
       const comando = interaction.options.getString('comando');
       const queue = client.queues.get(interaction.guild.id)
+      const int = interaction
+      const { channel, guild, member } = interaction
 
       try {
 

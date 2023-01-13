@@ -1,5 +1,5 @@
 const { ownerId } = require('../jsons/config.json')
-const {  AudioPlayerStatus } = require("@discordjs/voice")
+const { AudioPlayerStatus } = require("@discordjs/voice")
 
 class SlashCommand {
     constructor(client, interaction) {
@@ -34,7 +34,8 @@ class SlashCommand {
 
         const types = {
             owner,
-            music
+            music,
+            admin
         }
 
         types[command.type] ? types[command.type]() : executeCmd()
@@ -55,6 +56,12 @@ class SlashCommand {
         function owner() {
             if (user.id != ownerId)
                 return client.embedError(interaction, "Apenas o dono do bot pode executar este comando!")
+            return executeCmd()
+        }
+
+        function admin() {
+            if (!member.permissions.has('ADMINISTRATOR'))
+                return client.embedError(interaction, "Este comando requer permissão de administrador.")
             return executeCmd()
         }
 
