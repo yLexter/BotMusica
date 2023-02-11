@@ -1,6 +1,6 @@
-const InteractionSlashCommand = require('../classes/slashcommands')
+const InteractionSlashCommand = require('../classes/SlashCommand')
 const InteractionAutoComplete = require('../classes/AutoComplete')
-const InteractionButton = require('../classes/buttonInteraction')
+const InteractionButton = require('../classes/ButtonInteraction')
 
 module.exports = {
   name: 'interactionCreate',

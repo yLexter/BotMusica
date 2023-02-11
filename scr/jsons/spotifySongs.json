@@ -2,6 +2,15 @@
   "songs": [
     {
       "type": "track",
+      "id": "Kh9fYUUMK9U",
+      "title": "FOGO E GASOLINA",
+      "url": "https://open.spotify.com/track/52EYWdjiulHaehpexuowyh",
+      "duration": 182000,
+      "durationFormatted": "03:02",
+      "hash": 7747
+    },
+    {
+      "type": "track",
       "id": "XuY8Ck7-7z8",
       "title": "Under Pressure - Remastered 2011",
       "url": "https://open.spotify.com/track/2fuCquhmrzHpu5xcA1ci9x",
@@ -137,6 +146,15 @@
     },
     {
       "type": "track",
+      "id": "d7NMHcIecCE",
+      "title": "Ex dos Meus Sonhos - Ao Vivo",
+      "url": "https://open.spotify.com/track/7LUZT12r4xmwR1Kh8TJgjv",
+      "duration": 187000,
+      "durationFormatted": "03:07",
+      "hash": 97034
+    },
+    {
+      "type": "track",
       "id": "oBmM9pvUh5k",
       "title": "A Temporary High",
       "url": "https://open.spotify.com/track/0xTZXhs3eVb48PQNywMCdH",
@@ -200,6 +218,15 @@
     },
     {
       "type": "track",
+      "id": "8NjXVsLHIg8",
+      "title": "Casei Com a Putaria",
+      "url": "https://open.spotify.com/track/1OZ4uv7OAP24Ix6j3vojLt",
+      "duration": 162000,
+      "durationFormatted": "02:42",
+      "hash": 122617
+    },
+    {
+      "type": "track",
       "id": "q5gQtyobFLg",
       "title": "Feel Something",
       "url": "https://open.spotify.com/track/0vMI3AJPQMjytAu8XMWr65",
@@ -224,6 +251,15 @@
       "duration": 223000,
       "durationFormatted": "03:43",
       "hash": 132614
+    },
+    {
+      "type": "track",
+      "id": "RuXFXp4zQlM",
+      "title": "MAMA.CITA (hasta la vista)",
+      "url": "https://open.spotify.com/track/2m6ZDDrTvDQtKbwNFyI3r5",
+      "duration": 151000,
+      "durationFormatted": "02:31",
+      "hash": 138338
     },
     {
       "type": "track",
@@ -398,6 +434,24 @@
     },
     {
       "type": "track",
+      "id": "wP1C7DDD2pI",
+      "title": "Agudo Mágico 3",
+      "url": "https://open.spotify.com/track/6Hio4nlyWL2WBL8nYlbuGt",
+      "duration": 206000,
+      "durationFormatted": "03:26",
+      "hash": 259606
+    },
+    {
+      "type": "track",
+      "id": "p1OSg868sAY",
+      "title": "Basiquinho - Ao Vivo",
+      "url": "https://open.spotify.com/track/2HMbGPbGiqGaHXzFkQAmZI",
+      "duration": 165000,
+      "durationFormatted": "02:45",
+      "hash": 261998
+    },
+    {
+      "type": "track",
       "id": "6irGA3tMXGA",
       "title": "i've never felt so alone - slowed & filtered",
       "url": "https://open.spotify.com/track/5yJ8ZbAqFOq6wM9Il9ZcUV",
@@ -476,6 +530,33 @@
       "duration": 205000,
       "durationFormatted": "03:25",
       "hash": 313038
+    },
+    {
+      "type": "track",
+      "id": "tZMIKfHMnkU",
+      "title": "Média Boa - Ao Vivo",
+      "url": "https://open.spotify.com/track/1dMyIigB6MDsfD3xuG6TbO",
+      "duration": 146000,
+      "durationFormatted": "02:26",
+      "hash": 317401
+    },
+    {
+      "type": "track",
+      "id": "xEd4vHYLDko",
+      "title": "Perdoou Nada - Ao Vivo",
+      "url": "https://open.spotify.com/track/4r2O8NHomHiJnFKqhYnqy1",
+      "duration": 163000,
+      "durationFormatted": "02:43",
+      "hash": 318516
+    },
+    {
+      "type": "track",
+      "id": "jPwCxjJqHGw",
+      "title": "Pactos - Ao Vivo",
+      "url": "https://open.spotify.com/track/2M4kQD87lKnAS9vFlb4Bez",
+      "duration": 186000,
+      "durationFormatted": "03:06",
+      "hash": 327594
     },
     {
       "type": "track",
@@ -566,6 +647,15 @@
       "duration": 408000,
       "durationFormatted": "06:48",
       "hash": 373097
+    },
+    {
+      "type": "track",
+      "id": "69JAoslGYI8",
+      "title": "Pipoco",
+      "url": "https://open.spotify.com/track/7AwVSKaQxpidrtYBerkHKk",
+      "duration": 201000,
+      "durationFormatted": "03:21",
+      "hash": 376647
     },
     {
       "type": "track",
@@ -686,6 +776,24 @@
     },
     {
       "type": "track",
+      "id": "P5AnIr0_6tw",
+      "title": "Luz do Luar",
+      "url": "https://open.spotify.com/track/6eNRGL6Nkdg7RhJtmbcl0j",
+      "duration": 194000,
+      "durationFormatted": "03:14",
+      "hash": 465724
+    },
+    {
+      "type": "track",
+      "id": "OjZNMnmUVT4",
+      "title": "Assunto Delicado - Ao Vivo",
+      "url": "https://open.spotify.com/track/3yHXEidSu4gYVRqKoI653O",
+      "duration": 187000,
+      "durationFormatted": "03:07",
+      "hash": 470816
+    },
+    {
+      "type": "track",
       "id": "ZHwVBirqD2s",
       "title": "I'm Still Standing",
       "url": "https://open.spotify.com/track/0lzpfrTARexLFXEACKSXTh",
@@ -728,6 +836,33 @@
       "duration": 148000,
       "durationFormatted": "02:28",
       "hash": 489181
+    },
+    {
+      "type": "track",
+      "id": "kyfXEMqvLgU",
+      "title": "Mal Feito - Ao Vivo",
+      "url": "https://open.spotify.com/track/5719MEdRQcH4c3phXqX7WN",
+      "duration": 183000,
+      "durationFormatted": "03:03",
+      "hash": 491134
+    },
+    {
+      "type": "track",
+      "id": "eI5FkVWz_dI",
+      "title": "Meca Cereja",
+      "url": "https://open.spotify.com/track/52kcarcX0FQ6wPulXm2bMJ",
+      "duration": 241000,
+      "durationFormatted": "04:01",
+      "hash": 494343
+    },
+    {
+      "type": "track",
+      "id": "bPf3vNB944o",
+      "title": "PLAYGROUND",
+      "url": "https://open.spotify.com/track/5gitknsNQkrsCwfIbWK8Kd",
+      "duration": 173000,
+      "durationFormatted": "02:53",
+      "hash": 494854
     },
     {
       "type": "track",
@@ -821,6 +956,15 @@
     },
     {
       "type": "track",
+      "id": "vqHHUeEyEyU",
+      "title": "Toma Tapa",
+      "url": "https://open.spotify.com/track/2Vl7x4BkNhhJkEmQQMcV0V",
+      "duration": 124000,
+      "durationFormatted": "02:04",
+      "hash": 522973
+    },
+    {
+      "type": "track",
       "id": "DqoLMGSBGYc",
       "title": "Baby Can I Hold You",
       "url": "https://open.spotify.com/track/2DjWsDGgL1xNbhnr7f6t5F",
@@ -899,6 +1043,15 @@
       "duration": 209000,
       "durationFormatted": "03:29",
       "hash": 589284
+    },
+    {
+      "type": "track",
+      "id": "4HQect5dM-g",
+      "title": "Namora Aí",
+      "url": "https://open.spotify.com/track/1ACALdBWViTpLBC14Ecv8E",
+      "duration": 170000,
+      "durationFormatted": "02:50",
+      "hash": 597976
     },
     {
       "type": "track",
@@ -1010,6 +1163,15 @@
     },
     {
       "type": "track",
+      "id": "psdZRggL7cI",
+      "title": "Comunicação Falhou - Ao Vivo",
+      "url": "https://open.spotify.com/track/7bhvRvE56NHBvedx0EeALS",
+      "duration": 180000,
+      "durationFormatted": "03:00",
+      "hash": 678036
+    },
+    {
+      "type": "track",
       "id": "LWeiydKl0mU",
       "title": "Hold On",
       "url": "https://open.spotify.com/track/4u4NyuceXP7Uzh7XFJKCr1",
@@ -1061,6 +1223,15 @@
       "duration": 242000,
       "durationFormatted": "04:02",
       "hash": 739169
+    },
+    {
+      "type": "track",
+      "id": "af8fdbaB8JY",
+      "title": "Eu Gosto Assim - Ao Vivo",
+      "url": "https://open.spotify.com/track/4ASA1PZyWGbuc4d9N8OAcF",
+      "duration": 152000,
+      "durationFormatted": "02:32",
+      "hash": 741222
     },
     {
       "type": "track",
@@ -1127,6 +1298,15 @@
     },
     {
       "type": "track",
+      "id": "Vz4Sb1bl1IE",
+      "title": "CORAÇÃO CIGANO - Ao Vivo",
+      "url": "https://open.spotify.com/track/1LF8IUjHfiXEbTOjpxMULN",
+      "duration": 218000,
+      "durationFormatted": "03:38",
+      "hash": 776617
+    },
+    {
+      "type": "track",
       "id": "Vy1JwiXHwI4",
       "title": "Karma",
       "url": "https://open.spotify.com/track/4NknsYwkHVIeCxEq18UXCv",
@@ -1151,6 +1331,15 @@
       "duration": 190000,
       "durationFormatted": "03:10",
       "hash": 800525
+    },
+    {
+      "type": "track",
+      "id": "P2qvD7LRBAo",
+      "title": "Te Amo Demais",
+      "url": "https://open.spotify.com/track/4xxeEWGQNFQ6qehlnev5LS",
+      "duration": 214000,
+      "durationFormatted": "03:34",
+      "hash": 801466
     },
     {
       "type": "track",
@@ -1199,6 +1388,15 @@
     },
     {
       "type": "track",
+      "id": "eYuI4krrKBM",
+      "title": "No Ouvidinho",
+      "url": "https://open.spotify.com/track/4QWumyD2uwiePBBha9XBHI",
+      "duration": 198000,
+      "durationFormatted": "03:18",
+      "hash": 825526
+    },
+    {
+      "type": "track",
       "id": "bJpi2PB7-mo",
       "title": "Won't Be Walking Away",
       "url": "https://open.spotify.com/track/04YwDvXbDA1LUZ7ypvvQ7N",
@@ -1214,6 +1412,24 @@
       "duration": 229000,
       "durationFormatted": "03:49",
       "hash": 833896
+    },
+    {
+      "type": "track",
+      "id": "p03BWB5SN4M",
+      "title": "Coração de Gelo",
+      "url": "https://open.spotify.com/track/7nFvKgVumc9FcU97zGjjei",
+      "duration": 187000,
+      "durationFormatted": "03:07",
+      "hash": 835705
+    },
+    {
+      "type": "track",
+      "id": "8sscTVbijZs",
+      "title": "Evoque Prata",
+      "url": "https://open.spotify.com/track/1597vvneWf0zoQrg2D8yH6",
+      "duration": 130000,
+      "durationFormatted": "02:10",
+      "hash": 841168
     },
     {
       "type": "track",
@@ -1307,6 +1523,15 @@
     },
     {
       "type": "track",
+      "id": "4fzFfiW3RPM",
+      "title": "Ai Papai",
+      "url": "https://open.spotify.com/track/4PQ5AInr4YoBauth9YPduL",
+      "duration": 145000,
+      "durationFormatted": "02:25",
+      "hash": 907977
+    },
+    {
+      "type": "track",
       "id": "xxVdg_ZOsXc",
       "title": "Sex, Drugs, Etc.",
       "url": "https://open.spotify.com/track/04wODYKrbLNe7LTOaOPX3i",
@@ -1352,6 +1577,15 @@
     },
     {
       "type": "track",
+      "id": "zSRjeUpQUwI",
+      "title": "Gostosinha é Ela",
+      "url": "https://open.spotify.com/track/0XyPPyGes0omXppV5YE8gy",
+      "duration": 146000,
+      "durationFormatted": "02:26",
+      "hash": 946218
+    },
+    {
+      "type": "track",
       "id": "3TLCkIGV2mw",
       "title": "Sunlight",
       "url": "https://open.spotify.com/track/0iU4nb78DwWnBI9jGMoGqK",
@@ -1376,6 +1610,15 @@
       "duration": 177000,
       "durationFormatted": "02:57",
       "hash": 971418
+    },
+    {
+      "type": "track",
+      "id": "sOgYk0iXNls",
+      "title": "A Culpa É Nossa - Ao Vivo",
+      "url": "https://open.spotify.com/track/7nwHsYxiuHo98dLI7UVkyn",
+      "duration": 172000,
+      "durationFormatted": "02:52",
+      "hash": 985067
     },
     {
       "type": "track",
@@ -1487,6 +1730,15 @@
     },
     {
       "type": "track",
+      "id": "t050lriI0_w",
+      "title": "Bombonzinho - Ao Vivo",
+      "url": "https://open.spotify.com/track/4o6v3Oooyt7HF20idztRD4",
+      "duration": 159000,
+      "durationFormatted": "02:39",
+      "hash": 1080139
+    },
+    {
+      "type": "track",
       "id": "FyASdjZE0R0",
       "title": "Roses",
       "url": "https://open.spotify.com/track/3vv9phIu6Y1vX3jcqaGz5Z",
@@ -1523,12 +1775,30 @@
     },
     {
       "type": "track",
+      "id": "wFBp_PHXrf4",
+      "title": "Felina",
+      "url": "https://open.spotify.com/track/2orGm2E68ODFYOURjaES62",
+      "duration": 226000,
+      "durationFormatted": "03:46",
+      "hash": 1110054
+    },
+    {
+      "type": "track",
       "id": "1M6evm8ycmg",
       "title": "Die For You (feat. Dominic Fike)",
       "url": "https://open.spotify.com/track/7aely3H8kMj9o0gt6vXHE1",
       "duration": 199000,
       "durationFormatted": "03:19",
       "hash": 1111003
+    },
+    {
+      "type": "track",
+      "id": "I-UEY8A-b5c",
+      "title": "Dengo",
+      "url": "https://open.spotify.com/track/6Ulh9GPYz6JKdv04qc3q2U",
+      "duration": 160000,
+      "durationFormatted": "02:40",
+      "hash": 1111046
     },
     {
       "type": "track",
@@ -1568,12 +1838,30 @@
     },
     {
       "type": "track",
+      "id": "rUW7ev79fTA",
+      "title": "DONA DE MIM",
+      "url": "https://open.spotify.com/track/7sopDXkuzXtHt8AQpdBxmT",
+      "duration": 155000,
+      "durationFormatted": "02:35",
+      "hash": 1126023
+    },
+    {
+      "type": "track",
       "id": "0Sr0efOe8yk",
       "title": "Honey Pie - Remastered 2009",
       "url": "https://open.spotify.com/track/1TPcNcmuKlq0PKpYOBgP1U",
       "duration": 162000,
       "durationFormatted": "02:42",
       "hash": 1132606
+    },
+    {
+      "type": "track",
+      "id": "lyHNzNMSZyw",
+      "title": "Todo Seu - Ao Vivo",
+      "url": "https://open.spotify.com/track/546dFmvwFGBY7MJOkV5ctq",
+      "duration": 179000,
+      "durationFormatted": "02:59",
+      "hash": 1142660
     },
     {
       "type": "track",
@@ -1658,6 +1946,15 @@
     },
     {
       "type": "track",
+      "id": "vdbhKBGbsVM",
+      "title": "Novinha do Onlyfans (Tchan Ran Tchan Tchan)",
+      "url": "https://open.spotify.com/track/0oB3IBEhbmgTrL7mV0VnFq",
+      "duration": 162000,
+      "durationFormatted": "02:42",
+      "hash": 1189535
+    },
+    {
+      "type": "track",
       "id": "XatXy6ZhKZw",
       "title": "Cold (feat. Future)",
       "url": "https://open.spotify.com/track/2NlTOhsAamXOaZciOXbITb",
@@ -1682,6 +1979,15 @@
       "duration": 358000,
       "durationFormatted": "05:58",
       "hash": 1203428
+    },
+    {
+      "type": "track",
+      "id": "tBdx1b40rfU",
+      "title": "Tubarão Te Amo",
+      "url": "https://open.spotify.com/track/4UldILPVpnZO69ffK4B9aA",
+      "duration": 159000,
+      "durationFormatted": "02:39",
+      "hash": 1214516
     },
     {
       "type": "track",
@@ -1892,6 +2198,15 @@
     },
     {
       "type": "track",
+      "id": "D-HLUqfp2Wc",
+      "title": "Nem Namorado e Nem Ficante - Ao Vivo",
+      "url": "https://open.spotify.com/track/5djAifHOVqTUDP61DCx8ti",
+      "duration": 173000,
+      "durationFormatted": "02:53",
+      "hash": 1360174
+    },
+    {
+      "type": "track",
       "id": "lDK9QqIzhwk",
       "title": "Livin' On A Prayer",
       "url": "https://open.spotify.com/track/37ZJ0p5Jm13JPevGcx4SkF",
@@ -1934,6 +2249,15 @@
       "duration": 231000,
       "durationFormatted": "03:51",
       "hash": 1392423
+    },
+    {
+      "type": "track",
+      "id": "Z8HNDfY3ba4",
+      "title": "Puta Mexicana",
+      "url": "https://open.spotify.com/track/4mD9hjoTckjeL1CrJCx0MT",
+      "duration": 176000,
+      "durationFormatted": "02:56",
+      "hash": 1393904
     },
     {
       "type": "track",
@@ -2054,6 +2378,15 @@
     },
     {
       "type": "track",
+      "id": "vBQbH4mA_z0",
+      "title": "Te Love - Ao Vivo",
+      "url": "https://open.spotify.com/track/6TnCI16uLWhyQCrHva9VWj",
+      "duration": 173000,
+      "durationFormatted": "02:53",
+      "hash": 1454496
+    },
+    {
+      "type": "track",
       "id": "zqnr7_H3cWo",
       "title": "Burn Me Like a Fire",
       "url": "https://open.spotify.com/track/15O2kELD1X3eW3VXCFszTL",
@@ -2108,6 +2441,15 @@
     },
     {
       "type": "track",
+      "id": "vY2nYrhFRVo",
+      "title": "É Só Um Lance Lero Lero",
+      "url": "https://open.spotify.com/track/5DoYLtsVnNMcrgpMdEPOsI",
+      "duration": 125000,
+      "durationFormatted": "02:05",
+      "hash": 1494458
+    },
+    {
+      "type": "track",
       "id": "nqAvFx3NxUM",
       "title": "All Night Long (All Night) - Single Version",
       "url": "https://open.spotify.com/track/4czNORk5MjW5WOn98bki32",
@@ -2141,6 +2483,15 @@
       "duration": 177000,
       "durationFormatted": "02:57",
       "hash": 1502564
+    },
+    {
+      "type": "track",
+      "id": "rdh_LiJhb1E",
+      "title": "Poesia Acústica 13",
+      "url": "https://open.spotify.com/track/7qoIhutxU269Zqo9PG5IOj",
+      "duration": 629000,
+      "durationFormatted": "10:29",
+      "hash": 1511281
     },
     {
       "type": "track",
@@ -2258,6 +2609,15 @@
       "duration": 229000,
       "durationFormatted": "03:49",
       "hash": 1560894
+    },
+    {
+      "type": "track",
+      "id": "hOGuaMazCz8",
+      "title": "Fala Mal de Mim - Ao Vivo",
+      "url": "https://open.spotify.com/track/6gEOM9IEBzvTdbwNrSkBdC",
+      "duration": 213000,
+      "durationFormatted": "03:33",
+      "hash": 1561412
     },
     {
       "type": "track",
@@ -2468,6 +2828,15 @@
     },
     {
       "type": "track",
+      "id": "tI55Zu9uZEM",
+      "title": "Leão",
+      "url": "https://open.spotify.com/track/2K9kZpwD2CzTa6iiSYYOoO",
+      "duration": 170000,
+      "durationFormatted": "02:50",
+      "hash": 1693289
+    },
+    {
+      "type": "track",
       "id": "TMMiXjwhODU",
       "title": "Mother Nature's Son - Remastered 2009",
       "url": "https://open.spotify.com/track/6TjUg1cTUzWHbal6yQAi7c",
@@ -2558,6 +2927,15 @@
     },
     {
       "type": "track",
+      "id": "CCRS01DbCWg",
+      "title": "Esse B.O é Meu - Ao Vivo",
+      "url": "https://open.spotify.com/track/2YAOJkRWy382bRMXaj48FP",
+      "duration": 164000,
+      "durationFormatted": "02:44",
+      "hash": 1732145
+    },
+    {
+      "type": "track",
       "id": "h04CH9YZcpI",
       "title": "Jack & Diane",
       "url": "https://open.spotify.com/track/43btz2xjMKpcmjkuRsvxyg",
@@ -2582,6 +2960,15 @@
       "duration": 175000,
       "durationFormatted": "02:55",
       "hash": 1759754
+    },
+    {
+      "type": "track",
+      "id": "NbB6qMA2lts",
+      "title": "Ai Preto",
+      "url": "https://open.spotify.com/track/5vC8UAOHeG95ehRzZChniB",
+      "duration": 129000,
+      "durationFormatted": "02:09",
+      "hash": 1760483
     },
     {
       "type": "track",
@@ -2801,6 +3188,15 @@
     },
     {
       "type": "track",
+      "id": "24lfgigKHqQ",
+      "title": "Sereia",
+      "url": "https://open.spotify.com/track/77UrDaIQq6JZIJWeLgJaRf",
+      "duration": 296000,
+      "durationFormatted": "04:56",
+      "hash": 1865644
+    },
+    {
+      "type": "track",
       "id": "129kuDCQtHs",
       "title": "Dancing In the Dark",
       "url": "https://open.spotify.com/track/7FwBtcecmlpc1sLySPXeGE",
@@ -2873,6 +3269,15 @@
     },
     {
       "type": "track",
+      "id": "M4gwPKau-ag",
+      "title": "Beijo de Glicose - Ao Vivo",
+      "url": "https://open.spotify.com/track/6gyhp7IcNhTYzwlk8utsgP",
+      "duration": 175000,
+      "durationFormatted": "02:55",
+      "hash": 1911262
+    },
+    {
+      "type": "track",
       "id": "mvB5INcKAkU",
       "title": "How Bad Do You Want It",
       "url": "https://open.spotify.com/track/3MsSczExImfBf6j6OxW47K",
@@ -2900,6 +3305,24 @@
     },
     {
       "type": "track",
+      "id": "5fI3cK7iDeg",
+      "title": "Roça Em Mim",
+      "url": "https://open.spotify.com/track/2hkwwmmLC90T8BQ7t3xufq",
+      "duration": 165000,
+      "durationFormatted": "02:45",
+      "hash": 1920152
+    },
+    {
+      "type": "track",
+      "id": "qjxNM9qF3LA",
+      "title": "Haja Colírio (feat. Hugo & Guilherme) - Ao Vivo",
+      "url": "https://open.spotify.com/track/1ELsaYdj2NlxLvkx9g24xZ",
+      "duration": 181000,
+      "durationFormatted": "03:01",
+      "hash": 1935566
+    },
+    {
+      "type": "track",
       "id": "oXJUlatFXbc",
       "title": "Chemical Days",
       "url": "https://open.spotify.com/track/219qa1XAw8kHdVY4sHpoA5",
@@ -2915,6 +3338,15 @@
       "duration": 221000,
       "durationFormatted": "03:41",
       "hash": 1947667
+    },
+    {
+      "type": "track",
+      "id": "VFWKrXxJEdM",
+      "title": "5 Regras - Ao Vivo",
+      "url": "https://open.spotify.com/track/3gCWngngUs1uojw33vrE8K",
+      "duration": 168000,
+      "durationFormatted": "02:48",
+      "hash": 1947822
     },
     {
       "type": "track",
@@ -2978,6 +3410,15 @@
       "duration": 208000,
       "durationFormatted": "03:28",
       "hash": 1973744
+    },
+    {
+      "type": "track",
+      "id": "IOuLc9ZhLuQ",
+      "title": "Perfeito Pra Ficar Sozinho - Ao Vivo",
+      "url": "https://open.spotify.com/track/4cxQWmXmmbFoWvV8qipQTe",
+      "duration": 214000,
+      "durationFormatted": "03:34",
+      "hash": 1976287
     },
     {
       "type": "track",
@@ -3095,6 +3536,15 @@
       "duration": 245000,
       "durationFormatted": "04:05",
       "hash": 2073185
+    },
+    {
+      "type": "track",
+      "id": "vAM1xXdRnH0",
+      "title": "Balanço da Rede",
+      "url": "https://open.spotify.com/track/2qmG7dokbGpDGD0T5wORWt",
+      "duration": 168000,
+      "durationFormatted": "02:48",
+      "hash": 2073793
     },
     {
       "type": "track",

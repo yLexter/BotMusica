@@ -1,5 +1,5 @@
 const fs = require("fs")
-const { hashCode } = require("./utils")
+const { hashCode } = require("./Utils")
 
 class DatabaseSongs {
 

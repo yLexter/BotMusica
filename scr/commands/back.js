@@ -1,6 +1,5 @@
-const { MessageEmbed, CommandInteraction } = require("discord.js");
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const Command = require('../classes/command')
+const Command = require('../classes/Command')
 const Client = require('../classes/client')
 
 class CommandBack extends Command {

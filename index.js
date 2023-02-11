@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const CustomCliente = require('./scr/classes/client');
+const CustomCliente = require('./scr/classes/Client');
 const client = new CustomCliente()
 
 for (file of ['commands', 'events', 'prototypes']) {

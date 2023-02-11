@@ -2,7 +2,7 @@ const { MessageEmbed, } = require("discord.js");
 const YouTube = require("youtube-sr").default;
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const Queue = require('../classes/queue')
-const Command = require('../classes/command')
+const Command = require('../classes/Command')
 const { Song } = require('../classes/songs')
 
 const wait = require('util').promisify(setTimeout);

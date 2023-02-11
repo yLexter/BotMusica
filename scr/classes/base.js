@@ -1,8 +1,8 @@
-const database = require("./database")
+const database = require("./Database")
 const DatabaseSongs = require("./DatabaseSongs")
-const SquareApi = require("./hostApi")
-const SongsPagination = require("./musicPagination")
-const Utils = require("./utils")
+const SquareApi = require("./HostApi")
+const SongsPagination = require("./MusicPagination")
+const Utils = require("./Utils")
 const translate = require("@iamtraction/google-translate");
 const jsonConfig = require("../jsons/config.json")
 

@@ -1,4 +1,4 @@
-const Command = require('../classes/command')
+const Command = require('../classes/Command')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 class CommandStop extends Command {

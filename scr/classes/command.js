@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const Base = require("./base")
+const Base = require("./Base")
 
 class Command extends Base {
     constructor(options) {

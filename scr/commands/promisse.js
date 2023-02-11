@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const Command = require('../classes/command')
+const Command = require('../classes/Command')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const Queue = require('../classes/queue')
 const { songType } = require("../enums/index")

@@ -1,7 +1,7 @@
 const { MessageEmbed, } = require('discord.js');
 const YouTube = require("youtube-sr").default;
-const { Song, Playlist, SpotifySong, SpotifyPlaylist } = require("./songs")
-const { secondsToText } = require('./utils')
+const { Song, Playlist, SpotifySong, SpotifyPlaylist } = require("./Songs")
+const { secondsToText } = require('./Utils')
 const {
     AudioPlayerStatus,
     NoSubscriberBehavior,

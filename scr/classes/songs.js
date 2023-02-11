@@ -1,4 +1,4 @@
-const { secondsToText, hashCode } = require("./utils")
+const { secondsToText, hashCode } = require("./Utils")
 const { songType } = require("../enums/index")
 
 class Song {

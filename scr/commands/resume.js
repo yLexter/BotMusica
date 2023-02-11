@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const Command = require('../classes/command')
+const Command = require('../classes/Command')
 
 class CommandResume extends Command {
     constructor() {

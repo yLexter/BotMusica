@@ -1,4 +1,4 @@
-const Command = require('../classes/command')
+const Command = require('../classes/Command')
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 const wait = require('util').promisify(setTimeout);

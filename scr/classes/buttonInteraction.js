@@ -2,7 +2,7 @@ const { queueComponents, geral } = require("../enums")
 const { secondsToText } = require('./utils')
 const { MessageEmbed } = require('discord.js')
 const { AudioPlayerStatus } = require('@discordjs/voice')
-const Base = require("./base")
+const Base = require("./Base")
 
 module.exports = class extends Base {
     constructor(client, interaction) {

@@ -1,7 +1,7 @@
 
 const fecth = require('node-fetch')
 
-class HostApi {
+class SquareAPI {
 
     constructor() {
         this.appId = "5a5edda0686b48aeb8e375633f07064d"
@@ -45,4 +45,4 @@ class HostApi {
 
 }
 
-module.exports = new HostApi()
+module.exports = new SquareAPI()
